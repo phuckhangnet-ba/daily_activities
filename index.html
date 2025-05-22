@@ -1,0 +1,91 @@
+<html lang="en">
+<head xmlns="http://www.w3.org/1999/xhtml">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Daily Booking & Complete</title>
+  <link rel="stylesheet" href="index.css">
+  <style type="text/css">
+  	body{
+  		margin: 3em 5em;
+  	}
+  	table{
+		  width: 100%;
+		}
+  	table, th, td {
+		  border: 1px solid black;
+		  border-collapse: collapse;
+		  padding: 0.5em 1em;
+		}
+		button{
+			padding: 0.5em 1em;
+			font-size: 1.02em;
+		}
+		a{text-decoration: none;}
+		.cls_hide{display: none;}
+		.cls_flex{display: flex; align-items: center;}
+
+		#dvTitle > div{
+			flex: 1 1;
+		}
+		#dvMembers > div {
+			padding: 0.5em 0;
+			width: 10em !important;
+		}
+		#dvCards{
+			border-top: 3px salmon solid;
+			padding: 2em 0;
+		}
+		#dvCards table thead {
+		  position: relative;
+		  display: none;
+		}
+
+		#dvCards table tbody {
+		  display: block;
+			height: 55vh;
+		  overflow: auto;
+		}
+		.tabs{
+			justify-content: flex-end;
+			margin-top: 2em;
+		}
+		.tabs > div a {
+			color: inherit;
+		}
+		.tabs > div {
+			padding: 0.5em 2em;
+			margin-right: 0.5em;
+			border-bottom: 0;
+			border-color: salmon;
+			border-style: solid;
+			border-radius: 1em 1em 0 0;
+			cursor: pointer;
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+		.tabs > div.active {
+			background-color: salmon;
+			color: darkblue;
+		}
+  </style>
+</head>
+<body>
+	<div class="cls_flex" id="dvTitle">
+			<h1>Daily Booking & Complete</h1>
+			<div class="cls_hide"><input style="width:100%; padding: 0.2em; text-align: right;" id="token" value="ATTA67a10a0819780879d9b9def9102c19e929ebae1d702e394fb58173d132b1aa167A7A075F" /></div>
+			<div id='dvMembers' class="cls_flex" style="justify-content: flex-end;"></div>
+	</div>
+	<div id='dvActivity'></div>
+	<div class="tabs cls_flex">
+		<div class="active"><a href="#">🌻 Todo List</a></div>
+		<div><a href="#">⚡ Booking Tasks</a></div>
+		<div><a href="#">🎯 Backlog</a></div>
+		<div><a href="#">Completed 🎉</a></div>
+	</div>
+	<div id='dvCards'></div>
+</body>
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="./parameter.js?v=1.0.0.1"></script>
+<script type="text/javascript" src="./telegram.js?v=1.0.0.1"></script>
+<script type="text/javascript" src="./index.js?v=1.0.0.1"></script>
