@@ -6,11 +6,7 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-	<div class="cls_flex" id="dvTitle">
-			<h1>Daily Booking & Complete</h1>
-			<div class="cls_hide"><input style="width:100%; padding: 0.2em; text-align: right;" id="token" value="ATTA67a10a0819780879d9b9def9102c19e929ebae1d702e394fb58173d132b1aa167A7A075F" /></div>
-			<div id='dvMembers' class="cls_flex" style="justify-content: flex-end;"></div>
-	</div>
+	<div style="position:fixed;top: 0;left: 0;right: 0;"><input style="width:100%; text-align: right; font-size: 1.1em; padding: 0.3em 0.5em;" id="token" value="" placeholder="Fill in token of Trello" /></div>
 	<div id='dvActivity'></div>
 	<div class="tabs cls_flex">
 		<div class="active"><a href="#">🌻 Todo List</a></div>
@@ -19,10 +15,14 @@
 		<div><a href="#">Completed 🎉</a></div>
 	</div>
 	<div id='dvCards'></div>
+	<div class="cls_flex" id="dvTitle">
+			<div id='dvMembers' class="cls_flex" style="justify-content: flex-end;"></div>
+	</div>
 </body>
 
 <script type="text/javascript" src="jquery.min.js"></script>
 <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 <script type="text/javascript" src="./parameter.js?v=1.0.0.1"></script>
 <script type="text/javascript" src="./telegram.js?v=1.0.0.1"></script>
+<script type="text/javascript" src="./members.js?v=1.0.0.1"></script>
 <script type="text/javascript" src="./index.js?v=1.0.0.1"></script>
