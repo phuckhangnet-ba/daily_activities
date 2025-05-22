@@ -1,1 +1,62 @@
+body{
+	margin: 3em 5em;
+}
+table{
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5em 1em;
+}
+button{
+	padding: 0.5em 1em;
+	font-size: 1.02em;
+}
+a{text-decoration: none;}
+.cls_hide{display: none;}
+.cls_flex{display: flex; align-items: center;}
 
+#dvTitle > div{
+	flex: 1 1;
+}
+#dvMembers > div {
+	padding: 0.5em 0;
+	width: 10em !important;
+}
+#dvCards{
+	border-top: 3px salmon solid;
+	padding: 2em 0;
+}
+#dvCards table thead {
+  position: relative;
+  display: none;
+}
+
+#dvCards table tbody {
+  display: block;
+	height: 55vh;
+  overflow: auto;
+}
+.tabs{
+	justify-content: flex-end;
+	margin-top: 2em;
+}
+.tabs > div a {
+	color: inherit;
+}
+.tabs > div {
+	padding: 0.5em 2em;
+	margin-right: 0.5em;
+	border-bottom: 0;
+	border-color: salmon;
+	border-style: solid;
+	border-radius: 1em 1em 0 0;
+	cursor: pointer;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.tabs > div.active {
+	background-color: salmon;
+	color: darkblue;
+}
