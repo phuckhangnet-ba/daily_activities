@@ -20,9 +20,14 @@ a{text-decoration: none;}
 #dvTitle > div{
 	flex: 1 1;
 }
+#dvMembers{
+	justify-content: flex-end;
+}
 #dvMembers > div {
-	padding: 0.5em 0;
-	width: 10em !important;
+	padding: 0.5em;
+}
+#dvMembers > div:last {
+	padding-right: 0;
 }
 #dvCards{
 	border-top: 3px salmon solid;
@@ -40,7 +45,7 @@ a{text-decoration: none;}
 }
 .tabs{
 	justify-content: flex-end;
-	margin-top: 2em;
+	margin-top: 5em;
 }
 .tabs > div a {
 	color: inherit;
