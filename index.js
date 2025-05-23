@@ -110,7 +110,7 @@ $(function(){
 			let id=$(this).attr('id');
 			let name=$(this).attr('name');
 			let cls=$(this).attr('class').split(' ');
-			let idMembers=members.find(x=>x.token===token).id;
+			let idMembers=localStorage.getItem('id');
 			let action='';
 			let arr_value=[];let ajx_type='';
 			if(cls.indexOf('booking_card')>-1){
