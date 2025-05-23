@@ -51,6 +51,7 @@ $(function(){
 			add_table(idlist, namelist).then(function(){
 				// console.log(get_lists)
 				$.ajax(get_lists.url.replace('{id}',idlist).replace('{typeget}','cards')).done(function (card_res) {
+					console.log(card_res);
 					let cards=[];
 					$('#dvCards table').before(`<div class="cls_flex project" style="justify-content: flex-end">${project.filter(x=>card_res.filter(x2=>x2.name.indexOf(x.key) > -1).length > 0).map(x=>`<div style="background-color:${x.type};margin-right:0.5em; padding: 0.5em 0.8em">
 					<a href="#" class="prj_click" idlist="${idlist}" namelist="${namelist}" style="color:white; white-space: nowrap;">${x.key}</a></div>`).join('')}</div>`);
